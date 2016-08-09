@@ -19,7 +19,7 @@ public class AlarmReceiver  extends BroadcastReceiver{
     public  final  String TAG = "WZWcalender";
     String transmition;
     Calendar calender;
-    //hdhdhdhh
+    //h
     @Override
     public void onReceive(Context context, Intent intent) {
 
