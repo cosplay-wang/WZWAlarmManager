@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="cosplay.demo.wang.alarmmanager.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/old_once_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="api19以下的单次闹钟" />
+
+        <Button
+            android:id="@+id/old_repeat_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="api19以下的重复闹钟" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/new_once_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="api19之后的单次闹钟" />
+
+        <Button
+            android:id="@+id/new_once2_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="api19之后的单次闹钟2" />
+
+        <Button
+            android:id="@+id/new_repeat_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="api19之后的重复闹钟" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/close_old_once_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="取消闹钟old 单次" />
+
+        <Button
+            android:id="@+id/close_old_repeat_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="取消闹钟old 重复" />
+
+        <Button
+            android:id="@+id/close_new_once_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="取消闹钟new 单次" />
+
+        <Button
+            android:id="@+id/close_new_once2_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="取消闹钟new单次22" />
+
+        <Button
+            android:id="@+id/close_new_repeat_bt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:text="取消闹钟new 重复" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="经过测试，在api小与19的状态，old的单次和重复都可以准确运行。。。。在api大于等于19的状态下，old的单次可以运行，多次不可用，新的两种单次都可以运行（但是，会有延迟，大概是5秒，貌似和设备有关系）---新的重复是靠单次来死循环实现的，在AlarmReceiverNewRepeat，中实现了死循环，但是取消任务可以控制（同样第一次甚至第二次可能不准确）" />
+
+</LinearLayout>
